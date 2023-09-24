@@ -10,6 +10,7 @@ app.use(express.json())
 
 app.use("/user",userRoute)
 app.use("/appointments",doctorRoute)
+app.use(cors())
 
 app.get("/",(req,res)=>{
     res.send("Welcome to Backend Server")

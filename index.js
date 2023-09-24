@@ -14,7 +14,8 @@ app.use("/appointments",doctorRoute)
 app.use(cors())
 
 app.get("/",(req,res)=>{
-    res.send("Welcome to Backend Server")
+    res.send({
+   "message":"Welcome to Backend Server"})
 })
 
 app.listen(port,async()=>{

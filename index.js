@@ -2,6 +2,7 @@ const express= require('express');
 const  connection  = require('./db');
 const  userRoute  = require('./routes/userRoutes');
 const doctorRoute = require('./routes/doctorRoutes');
+const cors = require('cors'); 
 const port =8080
 
 const app= express()
